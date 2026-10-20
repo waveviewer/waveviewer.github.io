@@ -3,7 +3,7 @@
 I am a Research PHD candidate at SJTU Media Lab. I’m doing research on volumetric video and 3D reconstruction, under the direction of Prof. Li Song and Prof Qiang Hu.
 
 ## Education
-* PhD candidate in Electronic and Information Engineering, Sept.2024 ~ now, Shanghai Jiao Tong University
+* PhD candidate in Electronic and Information Engineering, Sept. 2024 ~ now, Shanghai Jiao Tong University
 * M.S. in Computer Science, Sept. 2020 ~ Jul. 2023 ShanghaiTech University
 * B.S. in Computer Science, Sept. 2016 ~ Jul. 2020 Shanghai University
 
@@ -14,7 +14,7 @@ I am a Research PHD candidate at SJTU Media Lab. I’m doing research on volumet
 [[Mail]](zhonghouqiang@sjtu.edu.cn)
 
 ## Publications
-
+**ACD-GS: Asymmetric Curvature-aware Densification for 3D Gaussian Splatting** *The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS) 2026* [Link](https://waveviewer.github.io/ACD-GS/) 
 **DP-DeGauss: Dynamic Probabilistic Gaussian Decomposition for Egocentric 4D Scene Reconstruction** *IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2026* [Link](https://doi.org/10.1109/ICASSP55912.2026.11461833)
 
 **AlignGS: Aligning Geometry and Semantics for Robust Indoor Reconstruction from Sparse Views** *International Conference on Visual Communications and Image Processing (VCIP) 2025* [Best Paper]
