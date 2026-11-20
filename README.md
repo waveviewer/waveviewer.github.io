@@ -29,11 +29,11 @@ I am a Research PHD candidate at SJTU Media Lab. I’m doing research on volumet
 
 **VRVVC: Variable-Rate NeRF-Based Volumetric Video Compression**  *The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) 2025* [Link](https://doi.org/10.1609/aaai.v39i4.32370)
 
-**4DGC: Rate-Aware 4D Gaussian Compression for Efficient Streamable Free-Viewpoint Video**   *The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025* [Link](https://openaccess.thecvf.com/content/CVPR2025/html/Hu_4DGC_Rate-Aware_4D_Gaussian_Compression_for_Efficient_Streamable_Free-Viewpoint_Video_CVPR_2025_paper.html)
+**4DGC: Rate-Aware 4D Gaussian Compression for Efficient Streamable Free-Viewpoint Video**   *The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025* [Link](https://openaccess.thecvf.com/content/CVPR2025/html/Hu_4DGC_Rate-Aware_4D_Gaussian_Compression_for_Efficient_Streamable_Free-Viewpoint_Video_CVPR_2025_paper.html) [Project Page](https://mediax-sjtu.github.io/4dgc/)
 
 **Serial Low-rank Adaptation of Vision Transformer**   *IEEE International Conference on Multimedia & Expo (ICME) 2025* [Link](https://arxiv.org/abs/2503.17750)
 
-**VARFVV: View-Adaptive Real-Time Interactive Free-View Video Streaming with Edge Computing**    *IEEE Journal on Selected Areas in Communications 2025* [Link](https://arxiv.org/abs/2501.13630)
+**VARFVV: View-Adaptive Real-Time Interactive Free-View Video Streaming with Edge Computing**    *IEEE Journal on Selected Areas in Communications 2025* [Link](https://arxiv.org/abs/2501.13630) [Project Page](https://mediax-sjtu.github.io/VARFVV/)
 
 **JointRF: End-to-End Joint Optimization for Dynamic Neural Radiance Field Representation and Compression**  *IEEE International Conference on Image Processing (ICIP) 2024* [Link](https://arxiv.org/abs/2405.14452)
 
