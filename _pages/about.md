@@ -11,8 +11,6 @@ redirect_from:
 
 I work on volumetric video: how to capture a moving scene with dozens of cameras, how to represent it with 4D Gaussians compactly enough to stream, and how to reconstruct it from as few views as possible. My papers cover the whole path from capture to playback, and several of them ship code and a project page.
 
-<p><a class="btn--mail" href="mailto:zhonghouqiang@sjtu.edu.cn">Email me</a></p>
-
 {% assign recent = site.publications | sort: "date" | reverse %}
 {% assign featured = recent | first %}
 {% assign feature_img = featured.feature | default: featured.header.teaser %}
@@ -33,8 +31,9 @@ I work on volumetric video: how to capture a moving scene with dozens of cameras
 </div>
 
 {% assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+{% comment %} The newest selected paper is the featured block above; list the rest. {% endcomment %}
 <div class="pub-list">
-  {% for post in selected %}
+  {% for post in selected offset:1 %}
     {% include publication-row.html post=post %}
   {% endfor %}
 </div>

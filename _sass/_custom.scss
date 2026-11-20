@@ -77,7 +77,7 @@ body {
   align-items: start;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 2.8rem 24px 0;
+  padding: 2.4rem 24px 0;
   animation: none;
 }
 
@@ -109,8 +109,8 @@ body {
 .page__content h2 {
   border-bottom: 0;
   padding-bottom: 0;
-  margin-top: 1.9em;
-  margin-bottom: 0.55em;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
   font-size: 1.28rem;
   letter-spacing: -0.012em;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .more-link {
-  margin-top: 1.8rem;
+  margin-top: 1.4rem;
   font-size: 0.92rem;
 }
 
@@ -161,7 +161,8 @@ body {
 }
 
 .author__avatar img {
-  max-width: 128px;
+  width: 132px;
+  height: auto;
   padding: 0;
   border: 0;
   border-radius: 12px;
@@ -280,31 +281,10 @@ body {
   text-underline-offset: 3px;
 }
 
-/* Buttons ----------------------------------------------------------------- */
-
-.btn--mail {
-  display: inline-block;
-  margin-bottom: 1.6rem;
-  padding: 0.62rem 1.15rem;
-  border-radius: 6px;
-  background: var(--global-text-color);
-  color: #ffffff;
-  font-size: 0.92rem;
-  font-weight: 550;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.btn--mail:hover {
-  background: var(--global-link-color-hover);
-  color: #ffffff;
-  text-decoration: none;
-}
-
 /* Featured paper on the home page ----------------------------------------- */
 
 .featured {
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .featured a {
@@ -344,7 +324,7 @@ body {
 }
 
 .interest-list li {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   line-height: 1.6;
 }
 
@@ -358,7 +338,7 @@ body {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 1rem;
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
   line-height: 1.55;
 }
 
@@ -379,7 +359,7 @@ body {
   float: none;
   width: 100%;
   max-width: 1040px;
-  margin: 3.5rem auto 0;
+  margin: 3rem auto 0;
   padding: 0 24px 2rem;
   border-top: 0;
   background: #ffffff;
@@ -478,6 +458,88 @@ body {
   .author__urls::before,
   .author__urls::after {
     display: none;
+  }
+}
+
+/* Landscape phones and short wide screens: keep the sidebar on the left, where
+   the width is available, instead of stacking it under a full screen of title. */
+
+@media screen and (orientation: landscape) and (max-height: 560px) and (min-width: 640px) {
+  #main {
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr);
+    column-gap: 2rem;
+    padding-top: 1.6rem;
+  }
+
+  .page,
+  .archive {
+    order: 0;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 76px;
+    order: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .author__avatar {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .author__avatar img {
+    width: 92px;
+  }
+
+  .author__content {
+    display: block;
+    padding: 0;
+    line-height: 1.45;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+  }
+
+  .author__name {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .author__bio {
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .author__urls-wrapper button {
+    display: none;
+  }
+
+  .author__urls {
+    display: block;
+    position: static;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .author__urls::before,
+  .author__urls::after {
+    display: none;
+  }
+
+  .page__title {
+    font-size: 2.2rem;
+  }
+
+  .page__content h2 {
+    margin-top: 1.5em;
   }
 }
 
