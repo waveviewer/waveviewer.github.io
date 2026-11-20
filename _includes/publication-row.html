@@ -1,0 +1,31 @@
+{% assign post = include.post %}
+{% assign title = post.title %}
+{% assign primary = post.projecturl | default: post.paperurl %}
+
+<article class="pub">
+  <div class="pub__teaser">
+    {% if post.header.teaser %}
+    <img src="{{ '/images/' | append: post.header.teaser | relative_url }}" alt="">
+    {% endif %}
+  </div>
+
+  <div class="pub__body">
+    <h3 class="pub__title">
+      {% if primary %}<a href="{{ primary }}">{{ title }}</a>{% else %}{{ title }}{% endif %}
+    </h3>
+
+    {% if post.authors %}
+    <p class="pub__authors">{{ post.authors | replace: "Houqiang Zhong", "<strong>Houqiang Zhong</strong>" }}</p>
+    {% endif %}
+
+    <p class="pub__venue">
+      {{ post.venue }}{% if post.award %} · <span class="pub__award">{{ post.award }}</span>{% endif %}
+    </p>
+
+    <p class="pub__links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+      {% if post.projecturl %}<a href="{{ post.projecturl }}">Project page</a>{% endif %}
+      {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+    </p>
+  </div>
+</article>
