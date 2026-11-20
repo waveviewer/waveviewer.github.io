@@ -43,5 +43,10 @@ bundle exec jekyll serve
 
 ## Notes
 
-- `assets/js/main.min.js` is committed on purpose. The upstream template builds it with npm during a GitHub Actions deploy, but this repository publishes with the plain Jekyll build of GitHub Pages, which does not run that step.
+- `assets/js/main.min.js` is committed on purpose. The upstream template builds it with npm during a GitHub Actions deploy, but the file is kept in the repository so a local preview works without Node. After editing `assets/js/_main.js`, rebuild it with:
+
+  ```bash
+  npx uglify-js@3 assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js
+  ```
+
 - The site is designed as a light page only; the palette lives in `_sass/_custom.scss`.
