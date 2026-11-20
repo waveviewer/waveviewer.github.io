@@ -9,7 +9,7 @@ redirect_from:
 
 <p class="lead">PhD candidate in Electronic and Information Engineering at Shanghai Jiao Tong University, advised by Prof. Li Song and Prof. Qiang Hu.</p>
 
-I work on volumetric video: how to capture a moving scene with dozens of cameras, how to represent it with 4D Gaussians compactly enough to stream, and how to reconstruct it from as few views as possible. My papers cover the whole path from capture to playback, and several of them ship code and a project page.
+I work on volumetric video: how to capture a moving scene with dozens of cameras, how to represent it with 4D Gaussians compactly enough to stream, and how to reconstruct it from as few views as possible.
 
 {% assign recent = site.publications | sort: "date" | reverse %}
 {% assign featured = recent | first %}
@@ -43,10 +43,9 @@ I work on volumetric video: how to capture a moving scene with dozens of cameras
 ## Research interests
 
 <ul class="interest-list">
-  <li><strong>4D reconstruction.</strong> Dynamic scene reconstruction from multi-view and egocentric video.</li>
+  <li><strong>3D/4D reconstruction.</strong> Dynamic scene reconstruction from multi-view and egocentric video, including novel-view synthesis from sparse or degraded captures.</li>
   <li><strong>Gaussian compression.</strong> Rate-aware and hierarchical compression of dynamic 3D Gaussian representations.</li>
   <li><strong>Volumetric streaming.</strong> Free-viewpoint video delivery with real-time decoding on mobile devices.</li>
-  <li><strong>View synthesis.</strong> Robust novel-view rendering from sparse or degraded captures.</li>
 </ul>
 
 ## Education
