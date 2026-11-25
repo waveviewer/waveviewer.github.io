@@ -28,7 +28,11 @@ author:
   bio              : "PhD candidate at SJTU Media Lab"
   location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
-  uri              : "https://medialab.sjtu.edu.cn/author/houqiang-zhong/"
+  labs:
+    - name : "MediaX"
+      url  : "https://mediax.sjtu.edu.cn/people/"
+    - name : "SJTU Media Lab"
+      url  : "https://medialab.sjtu.edu.cn/people/"
   email            : "zhonghouqiang@sjtu.edu.cn"
 
   # Academic websites
